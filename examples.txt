@@ -1,1 +1,2 @@
 https://jdhao.github.io/2018/05/16/git-push-local-to-remote/
+Add commands Monday Dec 11
