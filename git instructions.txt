@@ -18,15 +18,20 @@ git remote add origin https://github.com/crystgandhi/MyJavaFiles.git
 to push the local branch named "main" to the remote repository (usually on GitHub) that is set as "origin." 
 The -u flag is used to set up tracking, linking the local branch with the remote branch, which allows for more straightforward future Git operations. 
 After this command, subsequent pushes or pulls can be performed without specifying the remote and branch names.
+<<<<<<< HEAD
 git push -u origin main  (1st time)
 -------------------------
 
 git push  
+=======
+git push -u origin main
+>>>>>>> 8299ea0f29c72b81c2f5851f385dfe6661475807
 
 Dec 11 Monday
 
 To pull the code from remote repository branch called borkenlinks
 git pull origin brokenlinks
+<<<<<<< HEAD
 --------------------------
 To change from branch main to brokenlinks branch
 git checkout brokenlinks (now you will be in brokenlinks branch)
@@ -36,3 +41,11 @@ git status
 
 git checkout main (Switch to main)
 
+=======
+
+To change from branch main to brokenlinks branch
+git checkout brokenlinks (now you will be in brokenlinks branch)
+
+To get existing bracnhes
+git status
+>>>>>>> 8299ea0f29c72b81c2f5851f385dfe6661475807
