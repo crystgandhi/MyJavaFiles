@@ -4,17 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import demoQaTests.DemoQaBaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class OpenBrwser {
-	
-	
-	@Test
-	public void openBrowser() {
+public class OpenBrowser extends DemoQaBaseClass{
 		
-		WebDriverManager.chromiumdriver().setup();
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://demoqa.com/");
+	@Test
+	public void openBrowser () {
+		
+		System.out.println("Browser opened");
 	}
 
 }
