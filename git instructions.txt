@@ -33,3 +33,6 @@ git checkout brokenlinks (now you will be in brokenlinks branch)
 --------------------------------
 To get existing bracnhes
 git status
+
+git checkout main (Switch to main)
+
