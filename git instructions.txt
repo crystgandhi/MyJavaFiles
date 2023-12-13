@@ -49,3 +49,6 @@ git checkout brokenlinks (now you will be in brokenlinks branch)
 To get existing bracnhes
 git status
 >>>>>>> 8299ea0f29c72b81c2f5851f385dfe6661475807
+
+Dec 12
+DemoQaDec13_Buttons branch was created.
