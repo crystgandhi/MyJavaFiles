@@ -1,9 +1,11 @@
 package demoQaTests;
 
 import java.time.Duration;
+import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -18,12 +20,17 @@ public class DemoQaBaseClass {
 
 	@BeforeTest
 	public void setUP() {
+		ChromeOptions options=new ChromeOptions();
+		HashMap<String, Object> chromeprefs=new HashMap<String, Object>();
+		chromeprefs.put("profile.default_content_settings.popups",0);
+		options.setExperimentalOption("prefs", chromeprefs);
+				
 		// Setting up ChromeDriver if the browser is Chrome
 		if (browserName.equalsIgnoreCase("chrome")) {
 			// Download and setup ChromeDriver
 			WebDriverManager.chromedriver().setup();
 			// Initialize ChromeDriver instance
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		}
 		// Setting up EdgeDriver if the browser is Edge
 
@@ -41,7 +48,7 @@ public class DemoQaBaseClass {
 	@AfterTest
 	public void tearDown() {
 		// Close the browser
-		driver.close();
+		//driver.close();
 	}
 
 }
