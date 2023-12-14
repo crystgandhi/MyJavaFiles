@@ -23,6 +23,8 @@ public class DemoQaBaseClass {
 		ChromeOptions options=new ChromeOptions();
 		HashMap<String, Object> chromeprefs=new HashMap<String, Object>();
 		chromeprefs.put("profile.default_content_settings.popups",0);
+		//String downloadFilepath="./Files";
+		chromeprefs.put("download.default_directory","./Files");
 		options.setExperimentalOption("prefs", chromeprefs);
 				
 		// Setting up ChromeDriver if the browser is Chrome

@@ -70,27 +70,62 @@ public class ElementsPage {
 		// Return the text of the verification element
 		return verifyUserInformation.getText();
 	}
-	
-	
+
 	// check box link
-	@FindBy(xpath="//ul[@class='menu-list']/li[2]")
+	@FindBy(xpath = "//ul[@class='menu-list']/li[2]")
 	WebElement checkBoxLink;
+
 	public void checkBoxLinkClick() {
 		checkBoxLink.click();
 	}
-	//radioBtn link
-	@FindBy(xpath="//ul[@class='menu-list']/li[3]")
+
+	// radioBtn link
+	@FindBy(xpath = "//ul[@class='menu-list']/li[3]")
 	WebElement radioBtnLink;
+
 	public void radioBtnLinkClick() {
 		radioBtnLink.click();
 	}
-	//WebTables Links
-	@FindBy(xpath="//ul[@class='menu-list']/li[4]")
+
+	// WebTables Links
+	@FindBy(xpath = "//ul[@class='menu-list']/li[4]")
 	WebElement webTableLink;
+
 	public void webTableLinkClick() {
 		webTableLink.click();
 	}
-	
-	
 
+	// Buttons Links
+	@FindBy(xpath = "//ul[@class='menu-list']/li[5]")
+	WebElement buttonsLink;
+
+	public void buttonsLinkClick() {
+		buttonsLink.click();
+	}
+
+	// Links Page
+	@FindBy(xpath = "//div[@class='element-list collapse show']//li[@id='item-5']")
+	WebElement elements_Link;
+
+	public void elements_LinkClick() {
+		elements_Link.click();
+	}
+
+	// Broken Links page
+
+	@FindBy(xpath = "//ul[@class='menu-list']/li[7]")
+	WebElement brokenLink;
+
+	public void brokenLinkClick() {
+		brokenLink.click();
+	}
+	// Upload and Download
+	@FindBy(xpath ="/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[8]/span[1]")
+	WebElement uploadAndDownloadLink;
+
+	public void uploadAndDownloadLinkClick() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(171, 821)");
+		uploadAndDownloadLink.click();
+	}
 }
