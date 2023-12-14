@@ -52,3 +52,6 @@ git status
 
 Dec 12
 DemoQaDec13_Buttons branch was created.
+
+Dec 13 Wed
+DemoQA  Elements Page components update
