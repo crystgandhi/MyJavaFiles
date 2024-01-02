@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoQASuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilsDemoQa.MyListenersDemoQA"/>
+  </listeners>
+  <test thread-count="5" name="RadioBtnTest(failed)">
+    <classes>
+      <class name="demoQaTests.RadioBtnTest">
+        <methods>
+          <include name="elementsPageTextBoxTest"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- demoQaTests.RadioBtnTest -->
+    </classes>
+  </test> <!-- RadioBtnTest(failed) -->
+  <test thread-count="5" name="BrokenLinksImagesTest(failed)">
+    <classes>
+      <class name="demoQaTests.BrokenLinksImagesTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="elementsPageTextBoxTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- demoQaTests.BrokenLinksImagesTest -->
+    </classes>
+  </test> <!-- BrokenLinksImagesTest(failed) -->
+</suite> <!-- Failed suite [DemoQASuite] -->

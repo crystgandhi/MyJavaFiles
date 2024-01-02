@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demoQaTests.WebTableTest">
+      <class name="widgetsTests.ToolTipsTest">
         <methods>
-          <include name="setUP"/>
           <include name="elementsPageTextBoxTest"/>
+          <include name="setUP"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- demoQaTests.WebTableTest -->
+      </class> <!-- widgetsTests.ToolTipsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

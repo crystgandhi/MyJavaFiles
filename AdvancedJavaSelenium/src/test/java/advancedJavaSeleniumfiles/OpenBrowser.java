@@ -5,8 +5,8 @@ package advancedJavaSeleniumfiles;
 
 import org.testng.annotations.Test;
 
-import demoQaPageObjects.DemoQaHomePage;
-import demoQaTests.DemoQaBaseClass;
+import demoQaElementsPageObjects.DemoQaHomePage;
+import demoQaElementsPageTests.DemoQaBaseClass;
 
 
 

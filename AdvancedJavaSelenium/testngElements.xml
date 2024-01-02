@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoQASuiteElements">
+<listeners> 
+ 		<listener class-name="utilsDemoQa.MyListenersDemoQA"> 
+		</listener> 
+	</listeners> 
+	<test thread-count="5" name="OpenBrowserTest">
+		<classes>
+			<class name="advancedJavaSeleniumfiles.OpenBrowser"/>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="LinksTest">
+		<classes>
+			<class name="demoQaTests.LinksTest"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="WebTableTest">
+		<classes>
+			<class name="demoQaTests.WebTableTest"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="CheckboxTest">
+		<classes>
+			<class name="demoQaTests.CheckboxTest"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="ElementsPageTest">
+		<classes>
+			<class name="demoQaTests.ElementsPageTest"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="ButtonsTest">
+		<classes>
+			<class name="demoQaTests.ButtonsTest"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="RadioBtnTest">
+		<classes>
+			<class name="demoQaTests.RadioBtnTest"/>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="BrokenLinksImagesTest">
+		<classes>
+			<class name="demoQaTests.BrokenLinksImagesTest"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
